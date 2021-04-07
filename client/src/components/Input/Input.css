@@ -1,0 +1,62 @@
+.wrapFromButton {
+  display: flex;
+  justify-content: space-between;
+  background-color: #242526;
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+ background-color: #242526;
+ width: 100%;
+}
+
+.input {
+  border: none;
+  padding: 5%;
+  width: 80%;
+  font-size: 1.2em;
+  background-color: #3a3b3c;
+  border-radius: 30px;
+  color: #fff;
+}
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #0084ff;
+  position: relative;
+}
+button::after {
+  content: "";
+  width: 2px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+button::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  top: 30%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+.sendButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  background: #242526;
+  height: 75px;
+}
